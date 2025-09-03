@@ -9,7 +9,7 @@ def conectar_banco(nome_banco):
     return conexao
 
 
-# CRIAR BANCO
+# CRIAR TABELA
 def criar_tabela(conexao):
     try:
         cursor = conexao.cursor()
@@ -29,7 +29,7 @@ def criar_tabela(conexao):
 
     finally:
         cursor.close()
-        conexao.close()
+        
 
 
 # INSERIR DADOS
