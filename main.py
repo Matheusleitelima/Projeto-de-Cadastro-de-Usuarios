@@ -1,6 +1,8 @@
 import sqlite3
 from modelo import Pessoa
 import funcoes
+conexao = None
+
 
 print('Bem vindo ao nosso sistema de Banco de dados')
 while True:
@@ -38,5 +40,7 @@ while True:
                 'error ao inserir dados pois o banco de dados não foi criado, volte ao menu e selecione 1 \n')
 
     elif opc_menu == 0:
-        conexao.commit()
-        conexao .close()
+
+        if conexao:
+            conexao.commit()
+            conexao .close()
