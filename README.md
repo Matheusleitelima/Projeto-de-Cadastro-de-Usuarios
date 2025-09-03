@@ -67,4 +67,4 @@ class Pessoa:
 ---
 
 ## Autor
-MatheusX
+Matheus
